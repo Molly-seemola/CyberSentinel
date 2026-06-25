@@ -68,7 +68,7 @@ start quiz – begins the cybersecurity quiz
 
 show activity log – displays recent actions
 
-📋 Tasks Tab
+ Tasks Tab
 Add a task with a title, description, and optional reminder date.
 
 Mark Complete – updates the task status in the database.
@@ -77,7 +77,7 @@ Delete – permanently removes the task.
 
 The task list automatically refreshes after every action.
 
-🧠 Quiz Tab
+ Quiz Tab
 Click Start New Quiz to begin.
 
 Select an answer and click Submit Answer.
@@ -86,31 +86,29 @@ You receive immediate feedback with an explanation and sound effect.
 
 After all questions, your final score is displayed with a motivational message.
 
-📜 Activity Log Tab
+ Activity Log Tab
 View the last 10 actions; click Show All to see the full history.
 
 The log captures all task operations, quiz activity, NLP commands, and more.
 
-🔊 Voice & Sounds
+ Voice & Sounds
 Use the top‑right buttons to toggle Voice (text‑to‑speech) and Sound (beeps) independently.
 
-📝 Example Interactions
+ Example Interactions
 User Input	Chatbot Response
 Hello	Hello! How can I assist you with your cybersecurity today?
-Add task: Review privacy settings	✅ Task added: "Review privacy settings". Would you like a reminder? (say 'set reminder')
-Remind me to review privacy settings tomorrow	⏰ Reminder set for "Review privacy settings" on 2026-06-26.
-Start quiz	🧠 Quiz started! Good luck!
-Show activity log	📜 Recent activity:\n2026-06-25 10:15:30 - Task added: Review privacy settings\n...
-🌐 Video Presentation
+Add task: Review privacy settings	 Task added: "Review privacy settings". Would you like a reminder? (say 'set reminder')
+Remind me to review privacy settings tomorrow	 Reminder set for "Review privacy settings" on 2026-06-26.
+Start quiz	 Quiz started! Good luck!
+Show activity log	 Recent activity:\n2026-06-25 10:15:30 - Task added: Review privacy settings\n...
+ Video Presentation
 Click here to watch the demo and code walkthrough
 
-
-🙏 Acknowledgments
+ Acknowledgments
 Built as a final project for the Cybersecurity Awareness Chatbot assignment.
 
 Uses MySQL for data persistence and System.Speech for voice synthesis.
 
-📞 Support
-For issues, please open an issue on GitHub or contact [your email] – I'll be happy to help.
+
 
 Stay safe online! 🛡️
