@@ -108,6 +108,12 @@ Click here to watch the demo and code walkthrough
 Built as a final project for the Cybersecurity Awareness Chatbot assignment.
 
 Uses MySQL for data persistence and System.Speech for voice synthesis.
+## Author
+
+**Seemola Mamoloko Molly**
+PROG6221 — POE Part 2
+
+
 
 
 
