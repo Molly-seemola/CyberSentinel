@@ -50,7 +50,7 @@ namespace CyberSentinel
         {
             SoundManager.PlayWelcome();
             string welcome = "Welcome! I'm your cybersecurity assistant. How can I help you today?";
-            AppendChatMessage("🛡️ Cyber Sentinel", welcome);
+            AppendChatMessage(" Cyber Sentinel", welcome);
             SpeakResponse(welcome);
             ActivityLogger.Log("Application started");
             RefreshTasks();
@@ -81,10 +81,10 @@ namespace CyberSentinel
         private void BtnHelp_Click(object sender, RoutedEventArgs e)
         {
             MessageBox.Show("Cyber Sentinel Help\n\n" +
-                "💬 Chat: Type your message. I understand tasks, reminders, quiz, and logs.\n" +
-                "📋 Tasks: Add, complete, delete tasks with reminders.\n" +
-                "🧠 Quiz: Test your cybersecurity knowledge.\n" +
-                "📜 Activity Log: View recent actions.\n\n" +
+                " Chat: Type your message. I understand tasks, reminders, quiz, and logs.\n" +
+                " Tasks: Add, complete, delete tasks with reminders.\n" +
+                " Quiz: Test your cybersecurity knowledge.\n" +
+                " Activity Log: View recent actions.\n\n" +
                 "Examples:\n" +
                 "  - 'Add task: Enable 2FA'\n" +
                 "  - 'Remind me to update password tomorrow'\n" +
@@ -166,13 +166,13 @@ namespace CyberSentinel
                     _quizInProgress = true;
                     tabControl.SelectedItem = tabQuiz;
                     LoadNextQuizQuestion();
-                    response = "🧠 Quiz started! Good luck!";
+                    response = " Quiz started! Good luck!";
                     ActivityLogger.Log("Quiz started");
                     break;
 
                 case "show_log":
                     var logs = ActivityLogger.GetRecentLogs(10);
-                    response = "📜 Recent activity:\n" + string.Join("\n", logs);
+                    response = " Recent activity:\n" + string.Join("\n", logs);
                     break;
 
                 case "chat":
@@ -315,7 +315,7 @@ namespace CyberSentinel
             btnSubmitAnswer.IsEnabled = false;
             LoadNextQuizQuestion();
             ActivityLogger.Log("Quiz started via GUI");
-            AppendChatMessage("Cyber Sentinel", "🧠 Quiz started! Answer each question to test your cybersecurity knowledge.");
+            AppendChatMessage("Cyber Sentinel", " Quiz started! Answer each question to test your cybersecurity knowledge.");
         }
 
         private void LoadNextQuizQuestion()
@@ -324,7 +324,7 @@ namespace CyberSentinel
             if (q == null || _quiz.IsFinished())
             {
                 string msg = _quiz.GetFinalMessage();
-                txtQuestion.Text = "🎉 Quiz Complete!";
+                txtQuestion.Text = " Quiz Complete!";
                 icOptions.ItemsSource = null;
                 txtQuizFeedback.Text = msg + "\n\nClick 'Start New Quiz' to try again.";
                 txtQuizFeedback.Foreground = Brushes.Black;
